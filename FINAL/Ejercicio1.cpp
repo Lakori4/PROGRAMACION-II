@@ -18,8 +18,8 @@ public:
     void setHora(int h) {checkForm(h, 0); hora = h; }
     void setMinuto(int m) { checkForm(0, m); minuto = m;}
 
-    int getHora() { return hora;}
-    int getminuto() { return minuto; }
+    const int getHora()  { return hora;} 
+    const int getminuto() { return minuto; }
 
     void checkForm(int h, int m);
 
